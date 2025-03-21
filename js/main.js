@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -17,8 +17,8 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -28,7 +28,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -41,6 +41,20 @@
         loop: true,
         items: 1
     });
-    
+
 })(jQuery);
+
+window.onscroll = function () {
+    toggleContactInfo();
+};
+
+function toggleContactInfo() {
+    var contactInfo = document.getElementById("contactInfo");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        contactInfo.style.top = "0"; // Slide down when scrolling
+    } else {
+        contactInfo.style.top = "-75px"; // Slide up when at the top
+    }
+}
 

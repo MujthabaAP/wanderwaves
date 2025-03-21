@@ -11152,8 +11152,8 @@ h6,
   list-style-type: none;
 }
 
-.ww-link,  .ww-link:hover
-{
+.ww-link,
+.ww-link:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -11161,4 +11161,40 @@ h6,
 .btn-sp-subsc {
   height: 100%;
   border-radius: 0px 9px 9px 0px;
+}
+
+.contact-info {
+  position: fixed;
+  top: -50px;
+  /* Initially hide it above the viewport */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 18px;
+  transition: top 0.3s;
+  /* Smooth transition for sliding down */
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.separator {
+  margin: 0 15px;
+  /* Adds space between phone and email */
+}
+
+body {
+  /* padding-top: 50px; */
+  /* Adjust based on the height of the contact info bar */
+}
+
+
+.contact-info p {
+  margin: 0;
 }
