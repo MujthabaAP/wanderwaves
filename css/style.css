@@ -11152,7 +11152,13 @@ h6,
   list-style-type: none;
 }
 
-.ww-link,  .ww-link:hover{
+.ww-link,  .ww-link:hover
+{
   text-decoration: none;
   color: inherit;
+}
+
+.btn-sp-subsc {
+  height: 100%;
+  border-radius: 0px 9px 9px 0px;
 }
