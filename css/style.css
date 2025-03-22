@@ -11198,3 +11198,8 @@ body {
 .contact-info p {
   margin: 0;
 }
+
+.p-register {
+  margin-top: 30px;
+  color: white;
+}
